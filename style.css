@@ -1,204 +1,270 @@
-
-
-*{
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.container{
-    text-align: left;
-    position: absolute;
-    left: 5%;
-    top: 10%;
-
-
-
-}
-.container span{
-    
-    text-transform: uppercase;
-    display: block;
-    
-}
-.text1{
-    font-size: 25px;
-    font-weight: 700;
-    letter-spacing: 4px;
-    margin-bottom: 10px;
-    animation: text 5s 7;
-    color:black;
-
-}
-.text2{
-    font-size: 15px;
-    color: black;
-    
+body {
+  background-image: url(./images/background2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* border: 3px solid black; */
 }
 @keyframes text {
-    0%{
-        color:cyan;
-        margin-bottom: -40px;
-        
-
-    }
-    30%{
-        letter-spacing: 20px;
-        margin-bottom: -40px;
-        color: whitesmoke;
-    }
-    85%{
-        letter-spacing: 8px;
-        margin-bottom: -40px;
-        color: black;
-    
-    }
+  0% {
+    color: rgb(46, 60, 60);
+    margin-bottom: -40px;
+  }
+  30% {
+    letter-spacing: 20px;
+    margin-bottom: -40px;
+    color: rgb(48, 33, 33);
+  }
+  85% {
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+    color: black;
+  }
 }
-body{
-    background-image:url("images/background2.jpg");
-    width:100%;
-    height: 100%;
-    background-size: auto;
+.text1 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 700;
+  
 
-    
+  animation: text 5s 7;
+  color: black;
 }
-.bit{
-    width: 180px;
-    border-radius: 90px;
-    margin-left: 65%;
-    margin-top:5%;
+.text2 {
+  text-transform: uppercase;
 
-    
-    
+  font-size: 15px;
+  color: black;
+  /* padding: 2rem 0;s */
 }
-.pics {
-    width: 250px;
-    height: 100px;
-    margin-left: 80%;
-    margin-top: 1%;
-    border-radius: 50px;
-    padding: 15px;
+.container {
+  margin: 1.5rem;
+  
+  /* margin: 2rem; */
+}
+.introduction {
+  font-size: 2rem;
+  padding-bottom: 3rem;
+}
+.what {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  /* border: 1px solid black; */
+  justify-content: center;
+  /* align-items: center; */
+}
+ /* .what div { */
+  /* border: 2px solid black; */
 
--webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
-            box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
-
+.about p {
+  margin-top: 1rem;
+  font-size: 20px;
+  color: black;
+  
 
 }
-.pict1 {
-    -webkit-transform: rotate(-60deg);
-    -moz-transform: rotate(-60deg);
-      -o-transform: rotate(-60deg);
-     -ms-transform: rotate(-60deg);
-         transform: rotate(-0deg);
+.part2 {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  justify-content: center;
+  align-items: center;
 }
-.pict2 {
-    left: 5px;
-    -webkit-transform: rotate(60deg);
-       -moz-transform: rotate(60deg);
-         -o-transform: rotate(60deg);
-        -ms-transform: rotate(60deg);
-            transform: rotate(0deg);
+.skills p {
+  margin-top: 1rem;
+  font-size: 20px;
+  color: black;
+}
+.path p {
+  margin-top: 1rem;
+  font-size: 20px;
+  color: black;
+}
+.aboutImage {
+  border-radius: 90px;
+  width: 180px;
+
+}
+.footer {
+  /* background-image: linear-gradient(to top right, yellow, blue); */
+  font-size: 20px;
+  padding: 1rem ;
+
+  color: white;
+  height: 5rem;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(28, 26, 26);
+  /* opacity: 0.3; */
+  /* text-align: center; */
+  
+
+  
+
+}
+.footer a{
+  text-align: center;
+  padding: 0.8rem;
+}
+.footer > * {
+  margin: 0 0.5rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* transform:translateY(10); */
+  z-index: -1;
+}
+.footer > *:hover{
+  color: white;
+  background-color: lightblue;
 }
 @keyframes pict1 {
-    0% {transform: rotate(-60deg)}
-    50% {transform: rotate(-14deg)}
-    100% {transform: rotate(-60deg)}
+  0% {
+    transform: rotate(-60deg);
   }
-
+  50% {
+    transform: rotate(-14deg);
+  }
+  100% {
+    transform: rotate(-60deg);
+  }
+}
+.pict1 {
+  -webkit-animation: pict1 1.5s 7 alternate;
+  -moz-animation: pict1 1.5s 7 alternate;
+  -ms-animation: pict1 1.5s 7 alternate;
+  -o-animation: pict1 1.5s 7 alternate;
+  animation: pict1 1.5s 7 alternate;
+}
 @keyframes pict2 {
-    0% {left: 100px; z-index: 1; transform: rotate(60deg)}
-    49% {left: 350px; z-index: 1; transform: rotate(20deg)}
-    50% {left: 350px; z-index: -3; transform: rotate(20deg)}
-    100% {left: 100px; z-index: -3; transform: rotate(60deg)}
+  0% {
+    left: 100px;
+    z-index: 1;
+    transform: rotate(60deg);
   }
-
-.pics .pict1 {
-    -webkit-animation: pict1 1.5s 7 alternate;
-       -moz-animation: pict1 1.5s 7 alternate;
-        -ms-animation: pict1 1.5s 7 alternate;
-         -o-animation: pict1 1.5s 7 alternate;
-            animation: pict1 1.5s 7 alternate;
+  49% {
+    left: 350px;
+    z-index: 1;
+    transform: rotate(20deg);
   }
-   
-.pics .pict2 {
-    -webkit-animation: pict2 1.5s 7 alternate;
-       -moz-animation: pict2 1.5s 7 alternate;
-        -ms-animation: pict2 1.5s 7 alternate;
-         -o-animation: pict2 1.5s 7 alternate;
-            animation: pict2 1.5s 7 alternate;
+  50% {
+    left: 350px;
+    z-index: -3;
+    transform: rotate(20deg);
   }
-.abot {
-    margin-left: 40px;
-    text-shadow: 10px;
-    
+  100% {
+    left: 100px;
+    z-index: -3;
+    transform: rotate(60deg);
   }
-.about {
-margin-bottom: 20;
 }
-.texts {
-    color: black;
-    display: none;
-}
-.about:hover + .texts {
-    display: block;
-    color:whitesmoke;
+.pict2 {
+  -webkit-animation: pict2 1.5s 7 alternate;
+  -moz-animation: pict2 1.5s 7 alternate;
+  -ms-animation: pict2 1.5s 7 alternate;
+  -o-animation: pict2 1.5s 7 alternate;
+  animation: pict2 1.5s 7 alternate;
 }
 
-.skil {
-    
-    display: none;
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  width: 50px;
+  border-radius: 25px;
 }
-.skl:hover +.skil{
-    display: block;
-    color:whitesmoke;
+.fa:hover {
+  opacity: 0.7;
 }
-.path1{
-    display: none;
+.fa-instagram {  
+  /* background: #c00a0d;   */
+  color: rgb(100, 12, 12); 
+  text-align: center; 
 }
-.pat:hover +.path1{
-    color:whitesmoke;
-    display: block;
-
+.fa-linkedin {  
+  /* background: #007bb5;   */
+  color: white;  
 }
 .find{
-    color:black;
-    font-family:Arial, Helvetica, sans-serif;
-    text-shadow: rgba(0,0,0,0.3);
-}
-.fa {
-    padding: 5px;
-    font-size: 30px;
-    width: 40px;
-    text-align: center;
-    text-decoration: none;
-  }
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-    width: 50px;
-    border-radius: 25px;
-  }
-  .fa:hover {
-    opacity: 0.7;
-  }
-  .fa-instagram {  
-    background: #125688;  
-    color: white;  
-  }
-  .fa-linkedin {  
-    background: #007bb5;  
-    color: white;  
-  }
-.pict1:hover {
-    opacity: 0.7;
-}
-.pict2:hover {
-    opacity: 0.7;
-}
+  padding: 1.5rem !important; 
+  font-size: 1.5rem !important;
+  /* margin: 5rem !important; */
+  font-style: italic;
   
-@media only screen and (max-width: 600px) {
-    body{
-        height: 100%;
-        width: 100vh;
-    }
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    /* display: block !important; */
+  }
+  body {
+    width: 100% !important;
+    /* background-image: none; */
+    /* background-color: white !important; */
+  }
+  .text1 {
+    text-transform: uppercase;
+    font-size: 1rem !important;
+
+    animation: text 5s 7;
+    color: black;
+  }
+  .text2 {
+    text-transform: uppercase;
+
+    font-size: 0.5rem !important;
+    color: black;
+    /* padding: 2rem 0;s */
+  }
+  .introduction {
+    font-size: 1.5em;
+    padding: 1.5rem;
+  }
+  .what {
+    display: block !important;
+  }
+  .aboutImage {
+    width: 98%;
+    height: 25rem;
+    border-radius: 49px;
+    /* border: 3px inset black; */
+  }
+
+  .about p {
+    margin-top: 1rem;
+    font-size: 20px;
+  }
+  .part2 {
+    display: block !important;
+  }
+  .skills p {
+    margin-top: 1rem;
+    font-size: 20px;
+  }
+  .path p {
+    margin-top: 1rem;
+    font-size: 20px;
+  }
+ 
+  .footer {
+    /* background-image: linear-gradient(to top right, yellow, blue); */
+    font-size: 20px;
+    margin-top: 3rem;
+
+    /* color: white; */
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(29, 27, 27);
+  
+  }
+  
+
+}
+
