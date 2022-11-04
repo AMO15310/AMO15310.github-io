@@ -13,14 +13,7 @@ body {
   margin: 0;
   padding: 0;
 }
-.ident{
-  /* padding-right: 50rem !important; */
-  /* left: 0 !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start !important;
-  align-items: flex-start !important; */
-}
+
 .name {
   text-transform: uppercase;
   color: white;
@@ -65,12 +58,9 @@ a {
 
 a:hover {
   color: rgb(32, 245, 245);
-  /* background-color: aliceblue; */
 }
 .active {
   color: rgb(32, 245, 245) !important;
-  /* color: red; */
-  /* background-color: aliceblue; */
 }
 .about {
   padding-top: 6rem;
@@ -109,32 +99,22 @@ a:hover {
   }
 }
 .download{
-  padding-top: 40rem;
+  padding-top:37%;
   padding-left: 6rem;
 }
 .paragraph {
-  /* display: flex; */
-  /* justify-content: flex-end; */
-  /* text-align: end; */
   margin: 0;
   padding: 0;
-  /* overflow:visible; */
   word-break:keep-all;
 
-  /* margin-left: 20rem; */
 }
 .typed-text {
   word-break: break-all;
 }
 .last {
   display: flex;
-  /* justify-content: center; */
-  /* margin-top: 50%; */
   padding-top: 2rem;
   padding-left: 6rem;
-  /* padding-top: 30rem; */
-
-  /* bottom: 0; */
 }
 .b4,
 .b3,
@@ -143,8 +123,6 @@ a:hover {
   margin-left: 1rem;
   height: 1rem;
   width: 1rem;
-  /* background-color: #ccc; */
-  /* padding: 1rem; */
 }
 .navigator{
   display: none;
@@ -232,8 +210,6 @@ a:hover{
   justify-content: center;
   position: relative;
 }
-.ident{
-  
-}
+
 
 }
